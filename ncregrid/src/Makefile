@@ -13,7 +13,7 @@ OBJS := $(SRCS:.f90=.o)
 all: $(PROG)
 
 $(PROG): $(OBJS)
-	$(F90) $(F90FLAGS) $(INCLUDES) $(LIBS) -o $@ $(OBJS) $(LIBS)
+	$(F90) $(F90FLAGS) $(INCLUDES) -o $@ $(OBJS) $(LIBS)
 
 .SUFFIXES: $(SUFFIXES) .f90
 

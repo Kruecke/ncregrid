@@ -2,10 +2,10 @@
 export
 SHELL     = sh
 
-F90       = lf95
-F90FLAGS  = -Cpp
-LIBS      = -L/soft/netcdf/v3.6.0b6_lf/lib -lnetcdf
-INCLUDES  = -I/soft/netcdf/v3.6.0b6_lf/include
+F90       = f95
+F90FLAGS  = -cpp
+LIBS      = -Wl,-Bstatic -lnetcdff -Wl,-Bdynamic -lnetcdf
+INCLUDES  = -I/usr/lib64/gfortran/modules
 
 # ----------------------------------------------
 
