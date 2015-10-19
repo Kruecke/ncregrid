@@ -1,0 +1,10 @@
+&regrid
+outfile = 'output/outfile_1.nc',
+infile  = 'input/infile_1.nc',
+i_lonm  = 'XAX',
+i_lonr  = -180.0,180.0,
+grdfile = 'grd/grdfile_1.nc',
+g_lonm  = 'XAXNEW',
+g_lonr  = -180.0,180.0,
+var = 'GI=F:INT;GE=F:EXT',
+/

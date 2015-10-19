@@ -1,0 +1,30 @@
+License:
+--------
+
+The source code of ncregrid is available under the GNU General Public License
+(GPL, see GPL.txt). Since the GPL was not written for scientific software,
+the following additional terms apply for using ncregrid: 
+
+* If you implement ncregrid (fully or partly) in your own code
+  (e.g., into a global 3-dimensional model), please cite
+  the present publication
+    (Technical Note: Recursive rediscretisation of geo-scientific data
+     in multiple dimensions in the Modular Earth Submodel System (MESSy) data
+     import interface in Atmos. Chem. Phys. (2006),
+     available at http://www.atmos-chem-phys.org)
+  in the 'Model description' section (or equivalent) of resulting
+  publications. 
+* If you use ncregrid as 'stand-alone' program for handling your data,
+  I would appreciate a note in the 'Acknowledgements' of your resulting
+  publications. 
+* Please send me a reprint of your publication. I would also appreciate
+  a preprint when you submit your manuscript. 
+* If you change or extend ncregrid (by writing additional code),
+  you must also make it available using this (or a similar license).
+  This includes also code (e.g. Makefile) for porting ncregrid to other
+  platforms.
+  Please e-mail your new code to
+     ncregrid@p-joeckel.de
+  This will help me to coordinate further developments of the code.
+
+Mainz, January 2006, Patrick Jöckel
