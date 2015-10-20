@@ -16,3 +16,4 @@ ncregrid/src/mo_f2kcli.mod
 ncregrid/src/mo_f2kcli.o
 ncregrid/src/ncregrid
 ncregrid/src/ncregrid.o
+ncregrid/include/
