@@ -11,6 +11,7 @@ requirements:
     build:
         - gcc
         - libnetcdf
+        - f90netcdf
     run:
         - libnetcdf
 

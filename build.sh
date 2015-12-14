@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Install dependency from another channel
-conda install -c https://conda.anaconda.org/nesii/channel/esmf f90netcdf
-
 # Switch to ncregrid directory
 cd "$SRC_DIR/ncregrid"
 # Build ncregrid
