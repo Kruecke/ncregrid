@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Download netcdf fortran release
+cd "$SRC_DIR"
+wget ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-fortran-4.4.2.tar.gz
+tar -xzf netcdf-fortran-4.4.2.tar.gz
+# Build and install netcdf for fortran
+cd netcdf-fortran-4.4.2
+./configure --prefix="$PREFIX"
+make
+make install
+
 # Switch to ncregrid directory
 cd "$SRC_DIR/ncregrid"
 # Build ncregrid
