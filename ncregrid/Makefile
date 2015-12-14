@@ -3,7 +3,7 @@ export
 SHELL     = sh
 
 F90       = gfortran
-F90FLAGS  = -cpp -std=f95
+F90FLAGS  = -cpp
 LIBS      = -static-libgfortran -Wl,-Bstatic -lnetcdff -Wl,-Bdynamic -lnetcdf
 
 # --- Fedora 22 --------------------------------
