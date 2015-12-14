@@ -11,7 +11,7 @@ LIBS      = -static-libgfortran -Wl,-Bstatic -lnetcdff -Wl,-Bdynamic -lnetcdf
 # --- Debian 8 ---------------------------------
 #INCLUDES  = -I/usr/include
 # --- Conda Environment ------------------------
-INCLUDES = # -I../include
+INCLUDES = -I$(PREFIX)/include
 
 # ----------------------------------------------
 
