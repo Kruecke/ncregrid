@@ -9,7 +9,8 @@ source:
 
 requirements:
     build:
-        - gcc
+        - gcc # For some stupid reason we have to have gcc/ld installed to install this... (Debian 8)
+              # And we need 'make', but there doesn't seem to be a package on anaconda.
         - libnetcdf
     run:
         - libnetcdf

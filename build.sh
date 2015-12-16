@@ -1,10 +1,13 @@
 #!/bin/bash
 
-# Download netcdf fortran release
+# Download and untar netcdf fortran release
 cd "$SRC_DIR"
 wget ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-fortran-4.4.2.tar.gz
 tar -xzf netcdf-fortran-4.4.2.tar.gz
-# Build and install netcdf for fortran
+
+# Configure, build and install netcdf fortran libs
+echo "CFLAGS=-I$PREFIX/include" >> "$PREFIX/share/config.site"
+echo "LDFLAGS=-I$PREFIX/lib"    >> "$PREFIX/share/config.site"
 cd netcdf-fortran-4.4.2
 ./configure --prefix="$PREFIX"
 make
